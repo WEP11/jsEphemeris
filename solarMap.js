@@ -219,7 +219,7 @@ function createSolarMap()
 
     solarMap.attributionControl.setPrefix(false);
     solarMap.attributionControl._attributions = {};
-    solarMap.attributionControl.addAttribution("Griffon Emporium | Not for Actual Space Navigation")
+    solarMap.attributionControl.addAttribution("Not for Actual Space Navigation")
     L.control.scale().addTo(solarMap);
 
     // Create solar system layer
@@ -247,7 +247,6 @@ function createSolarMap()
     var solarOverlays = {
         "Dwarf Planets": dwarfPlanets,
         "Trans-Neptunian Objects": tnoPlanets,
-        //"Shipping Lanes": solarSystem
     };
 
     L.control.layers(solarBaseLayers, solarOverlays, {collapsed: false}, autoZIndex=true, hideSingleBase=true).addTo(solarMap);
